@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeTheme"
+    android:background="@drawable/background">
+
+    <include
+        android:id="@+id/Toolbar"
+        layout="@layout/implement_main_toolbar" />
+
+    <ImageView
+        android:id="@+id/OverlayImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.50"
+        android:background="@android:color/background_dark"
+        android:contentDescription="todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar" />
+
+    <ImageView
+        android:id="@+id/mintThemeImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="@+id/OverlayImgView"
+        app:layout_constraintTop_toBottomOf="@+id/lilacThemeImg"
+        app:srcCompat="@color/mintColorPrimary" />
+
+    <ImageView
+        android:id="@+id/lilacThemeImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/defaultThemeImg"
+        app:srcCompat="@color/lilacColorPrimary" />
+
+    <ImageView
+        android:id="@+id/defaultThemeImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="@+id/OverlayImgView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+        app:srcCompat="@color/colorPrimary"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="207dp"
+        android:layout_height="532dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/OverlayImgView"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView">
+
+        <RadioButton
+            android:id="@+id/defaultThemeRB"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="@font/roboto_light"
+            android:layoutDirection="rtl"
+            android:text="Default Theme"
+            android:textColor="@color/buttonText"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/lilacThemeRB"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="@font/roboto_light"
+            android:layoutDirection="rtl"
+            android:text="Lilac Theme"
+            android:textColor="@color/buttonText"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/mintThemeRB"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="@font/roboto_light"
+            android:layoutDirection="rtl"
+            android:text="Mint Theme"
+            android:textColor="@color/buttonText"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/seaBlueThemeRB"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="@font/roboto_light"
+            android:layoutDirection="rtl"
+            android:text="Sea Blue Theme"
+            android:textColor="@color/buttonText"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/greyThemeRB"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:buttonTint="#FFFFFF"
+            android:fontFamily="@font/roboto_light"
+            android:layoutDirection="rtl"
+            android:text="Grey Theme"
+            android:textColor="@color/buttonText"
+            android:textSize="16dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="311dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Please select your theme below"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar" />
+
+    <ImageView
+        android:id="@+id/seaBlueThemeImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="@+id/OverlayImgView"
+        app:layout_constraintTop_toBottomOf="@+id/mintThemeImg"
+        app:srcCompat="@color/seaBlueButtonNormal" />
+
+    <ImageView
+        android:id="@+id/greyThemeImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seaBlueThemeImg"
+        app:srcCompat="@color/greyColorPrimary" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

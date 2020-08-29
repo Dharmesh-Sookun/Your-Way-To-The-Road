@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/changeTheme"
+        android:title="Change Theme" />
+
+    <item android:id="@+id/showHelp"
+        android:title="Help" />
+
+</menu>

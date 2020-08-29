@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Colors for default theme-->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#4300a2</color>
+    <color name="colorAccent">#BB00FF</color>
+    <color name="primaryText">#FFFFFF</color>
+    <color name="buttonNormal">#6200EE</color>
+    <color name="buttonHighlight">#4300a2</color>
+    <color name="buttonText">#FFFFFF</color>
+
+    <!--Colors for lilac Theme-->
+    <color name="lilacColorPrimary">#720D5D</color>
+    <color name="lilacColorPrimaryDark">#430033</color>
+    <color name="lilacColorAccent">#e30425</color>
+    <color name="lilacPrimaryText">#FFFFFF</color>
+    <color name="lilacButtonNormal">#720D5D</color>
+    <color name="lilacButtonHighlight">#ff554f</color>
+    <color name="lilacButtonText">#FFFFFF</color>
+
+    <!--Colors for mint Theme-->
+    <color name="mintColorPrimary">#76BE2F</color>
+    <color name="mintColorPrimaryDark">#289b23</color>
+    <color name="mintColorAccent">#f9a825</color>
+    <color name="mintPrimaryText">#FFFFFF</color>
+    <color name="mintButtonNormal">#76be2f</color>
+    <color name="mintButtonHighlight">#81c784</color>
+    <color name="mintButtonText">#FFFFFF</color>
+
+    <!--Colors for sea blue theme-->
+    <color name="seaBlueColorPrimary"> #006994</color>
+    <color name="seaBlueColorPrimaryDark">#00577b</color>
+    <color name="seaBlueColorAccent">#009475</color>
+    <color name="seaBluePrimaryText">#FFFFFF</color>
+    <color name="seaBlueButtonNormal">#006994</color>
+    <color name="seaBlueButtonHighlight">#00577b</color>
+    <color name="seaBlueButtonText">#FFFFFF</color>
+
+    <!--Colors for grey theme-->
+    <color name="greyColorPrimary">	#707070</color>
+    <color name="greyColorPrimaryDark">#686868</color>
+    <color name="greyColorAccent">#707070</color>
+    <color name="greyPrimaryText">#FFFFFF</color>
+    <color name="greyButtonNormal">#707070</color>
+    <color name="greyButtonHighlight">#686868</color>
+    <color name="greyButtonText">#FFFFFF</color>
+
+    <!--Colours for custom alert dialogs-->
+    <color name="colorRed">#ff3943</color>
+    <color name="colorRedDark">#801b20</color>
+    <color name="colorGreenLight">#abffc0</color>
+    <color name="colorGreen">#247b37</color>
+    <color name="colorGreen1">#3eb959</color>
+    
+    <!--Color for tab indicator and text for onboard screen-->
+    <color name="tab_indicator_grey">#c0c0c0</color>
+    <color name="intro_tile_text">#FFFFFF</color>
+    <color name="intro_desc_text">#FFFFFF</color>
+
+    <!--Showcase colours-->
+    <color name="title_text_color">#FFFFFF</color>
+    <color name="mask_color">#00FFFFFF</color>
+    <color name="content_text_color">#000000</color>
+    <color name="dismiss_text_color">#FFFFFF</color>
+
+
+</resources>

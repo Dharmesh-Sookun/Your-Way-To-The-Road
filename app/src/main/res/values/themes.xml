@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.App" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="textViewStyle">@style/TextAppearance.App.Widget.TextView</item>
+        <item name="primaryButtonTheme">@style/Widget.Button.Primary</item>
+    </style>
+
+    <style name="Theme.App.Default" parent="Base.Theme.App">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="primaryTextColor">@color/primaryText</item>
+        <item name="buttonNormalColor">@color/buttonNormal</item>
+        <item name="buttonHighlightColor">@color/buttonHighlight</item>
+        <item name="buttonTextColor">@color/buttonText</item>
+    </style>
+
+    <style name="Theme.App.Mint" parent="Base.Theme.App">
+        <item name="colorPrimary">@color/mintColorPrimary</item>
+        <item name="colorPrimaryDark">@color/mintColorPrimaryDark</item>
+        <item name="colorAccent">@color/mintColorAccent</item>
+        <item name="primaryTextColor">@color/mintPrimaryText</item>
+        <item name="buttonNormalColor">@color/mintButtonNormal</item>
+        <item name="buttonHighlightColor">@color/mintButtonHighlight</item>
+        <item name="buttonTextColor">@color/mintButtonText</item>
+    </style>
+
+    <style name="Theme.App.Lilac" parent="Base.Theme.App">
+        <item name="colorPrimary">@color/lilacColorPrimary</item>
+        <item name="colorPrimaryDark">@color/lilacColorPrimaryDark</item>
+        <item name="colorAccent">@color/lilacColorAccent</item>
+        <item name="primaryTextColor">@color/lilacPrimaryText</item>
+        <item name="buttonNormalColor">@color/lilacButtonNormal</item>
+        <item name="buttonHighlightColor">@color/lilacButtonHighlight</item>
+        <item name="buttonTextColor">@color/lilacButtonText</item>
+    </style>
+
+    <style name="Theme.App.SeaBlue" parent="Base.Theme.App">
+        <item name="colorPrimary">@color/seaBlueColorPrimary</item>
+        <item name="colorPrimaryDark">@color/seaBlueColorPrimaryDark</item>
+        <item name="colorAccent">@color/seaBlueColorAccent</item>
+        <item name="primaryTextColor">@color/seaBluePrimaryText</item>
+        <item name="buttonNormalColor">@color/seaBlueButtonNormal</item>
+        <item name="buttonHighlightColor">@color/seaBlueButtonHighlight</item>
+        <item name="buttonTextColor">@color/seaBlueButtonText</item>
+    </style>
+
+    <style name="Theme.App.Pink" parent="Base.Theme.App">
+        <item name="colorPrimary">@color/greyColorPrimary</item>
+        <item name="colorPrimaryDark">@color/greyColorPrimaryDark</item>
+        <item name="colorAccent">@color/greyColorAccent</item>
+        <item name="primaryTextColor">@color/greyPrimaryText</item>
+        <item name="buttonNormalColor">@color/greyButtonNormal</item>
+        <item name="buttonHighlightColor">@color/greyButtonHighlight</item>
+        <item name="buttonTextColor">@color/greyButtonText</item>
+    </style>
+
+    <style name="Widget.Button.Primary" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">?attr/buttonNormalColor</item>
+        <item name="colorControlHighlight">?attr/buttonHighlightColor</item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:background">?attr/buttonNormalColor</item>
+        <item name="android:textColorPrimary">?attr/buttonTextColor</item>
+        <item name="android:textColor">?attr/buttonTextColor</item>
+    </style>
+
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".IntroOnBoardActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.70"
+        android:background="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/skipBtn"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_round_button"
+        android:text="Skip"
+        android:textColor="@color/intro_tile_text"
+        app:layout_constraintBottom_toTopOf="@+id/screenPager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/screenPager"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabIndicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.741">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_round_button"
+        android:drawableEnd="@drawable/ic_arrow_forward_24dp"
+        android:paddingEnd="20dp"
+        android:text="Next"
+        android:textColor="@color/intro_desc_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabIndicator"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/indicator_selector"
+        app:tabIndicatorHeight="0dp" />
+
+    <Button
+        android:id="@+id/getStartedBtn"
+        android:visibility="invisible"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/custom_round_button"
+        android:text="Get Started"
+        android:drawableEnd="@drawable/ic_arrow_forward_24dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:textColor="@color/intro_desc_text"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_round_button"
+        android:text="Previous"
+        android:drawableStart="@drawable/ic_arrow_back_24dp"
+        android:textColor="@color/intro_tile_text"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextBtn"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <include
+        android:id="@+id/Toolbar"
+        layout="@layout/implement_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/overlayImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:contentDescription="todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:color/background_dark" />
+
+    <ImageView
+        android:id="@+id/logoImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:contentDescription="todo"
+        android:background="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/overlayImgView"/>
+
+    <Button
+        android:id="@+id/learnNowBtn"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Learn Now"
+        android:drawableLeft="@drawable/ic_learn_now_24dp"
+        android:background="@drawable/custom_round_button"
+        android:textColor="?attr/primaryTextColor"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImgView" />
+
+    <Button
+        android:id="@+id/bookTestBtn"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Book Test"
+        android:drawableLeft="@drawable/ic_book_test_24dp"
+        android:background="@drawable/custom_round_button"
+        android:textColor="?attr/primaryTextColor"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/takeTestBtn" />
+
+    <Button
+        android:id="@+id/takeTestBtn"
+        android:layout_width="173dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="Take Mock Test"
+        android:drawableLeft="@drawable/ic_take_test_24dp"
+        android:background="@drawable/custom_round_button"
+        android:textColor="?attr/primaryTextColor"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learnNowBtn" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/speakFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="300dp"
+        android:contentDescription="Speak"
+        android:src="@drawable/ic_mic_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProhibitiveSignsList"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <include
+        android:id="@+id/Toolbar"
+        layout="@layout/implement_main_toolbar" />
+
+    <ImageView
+        android:id="@+id/OverlayImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.50"
+        android:background="@android:color/background_dark"
+        android:contentDescription="todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:scrollbarFadeDuration="@android:integer/config_mediumAnimTime"
+        android:scrollbarSize="4dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/custom_scroll"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/OverlayImgView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/speakFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="300dp"
+        android:layout_below="@id/recycler_view"
+        android:contentDescription="Speak"
+        android:src="@drawable/ic_mic_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <moe.feng.common.view.breadcrumbs.BreadcrumbsView
+        android:id="@+id/breadcrumbs_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.PopupOverlay"
+        app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/OverlayImgView"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
